@@ -57,12 +57,10 @@
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Insurance API",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/endpoint/auth",
+              "api-reference/endpoint/search"
             ]
           }
         ]

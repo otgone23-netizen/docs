@@ -1,33 +1,18 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'Оршил'
+description: 'Номин Даатгалын API баримт бичиг.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Тавтай морилно уу
 
-## Welcome
+Энэ хэсэгт Номин Даатгалын API-г тайлбарласан болно. Энэхүү API нь эрх бүхий хэрэглэгчдэд даатгалын гэрээний мэдээллийг хайх боломжийг олгодог.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## Баталгаажуулалт (Authentication)
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+Хандалт нь **Bearer Token** ашиглан хийгдэнэ. Та эхлээд **Хэрэглэгч нэвтрэх** (Authenticate) endpoint-ийг ашиглан өөрийн `username`, `password`, болон `db` мэдээллийг илгээж токен авах шаардлагатай.
 
-## Authentication
+Токен авсны дараа дараагийн бүх хүсэлтийн `Authorization` хэсэгт уг токеноо дараах байдлаар оруулна:
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+```http
+Authorization: Bearer <your_token>
 ```
