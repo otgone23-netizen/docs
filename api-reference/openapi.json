@@ -45,11 +45,11 @@
                 "properties": {
                   "username": {
                     "type": "string",
-                    "example": "odbayarmwall@gmail.com"
+                    "example": "your_username"
                   },
                   "password": {
                     "type": "string",
-                    "example": "Odka99542820!"
+                    "example": "your_password"
                   }
                 },
                 "required": [
