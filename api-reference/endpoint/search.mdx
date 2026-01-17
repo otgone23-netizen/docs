@@ -11,6 +11,18 @@ openapi: 'GET /api/Insurance/ContractSearch'
 https://ins.nomin.mn/api/Insurance/ContractSearch?SearchTypeID=1&SearchValue=1234567
 ```
 
+### Curl жишээ
+
+Терминалаас дуудах жишээ:
+
+```bash
+curl --request GET \
+  --url 'https://ins.nomin.mn/api/Insurance/ContractSearch?SearchTypeID=1&SearchValue=1234567' \
+  --header 'Authorization: Bearer <YOUR_TOKEN>'
+```
+
 **Тайлбар:**
 *   `SearchTypeID=1`: Арлын дугаар (VIN) эсвэл Улсын дугаар
 *   `SearchTypeID=2`: Регистрийн дугаар
+*   `SearchValue`: Хайх утга
+*   `Authorization`: **Нэвтрэх** (Auth) API-аас авсан токеноо `<YOUR_TOKEN>` хэсэгт орлуулж бичнэ.
