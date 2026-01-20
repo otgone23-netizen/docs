@@ -1,15 +1,42 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Managewall Documentations",
   "colors": {
     "primary": "#015bff",
     "light": "#4D7CFF",
     "dark": "#015bff"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
+      {
+        "tab": "Onboarding",
+        "groups": [
+          {
+            "group": "Ерөнхий",
+            "pages": [
+              "onboarding/welcome",
+              "onboarding/rules",
+              "onboarding/resources"
+            ]
+          },
+          {
+            "group": "Хөгжүүлэгч",
+            "pages": [
+              "onboarding/dev/setup",
+              "onboarding/dev/workflow"
+            ]
+          },
+          {
+            "group": "Систем Аналист",
+            "pages": [
+              "onboarding/analyst/setup",
+              "onboarding/analyst/workflow"
+            ]
+          }
+        ]
+      },
       {
         "tab": "Guides",
         "groups": [
@@ -70,12 +97,12 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://www.odoo.com/documentation/18.0",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://managewall.mn/about-us",
           "icon": "newspaper"
         }
       ]
